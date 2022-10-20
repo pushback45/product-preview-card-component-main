@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+	--cream: hsl(30, 38%, 92%);
+	--dark-cyan: hsl(158, 36%, 37%);
+	--very-dark-blue: hsl(212, 21%, 14%);
+	--dark-grayish-blue: hsl(228, 12%, 48%);
+	--white: hsl(0, 0%, 100%);
+	--text-size: 0.875rem;
+	--montserrat: 'Montserrat', sans-serif;
+	--fraunces: 'Fraunces', serif;
+	--image-mobile: 100%;
+}
+
+body {
+	background: var(--cream);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.mobile-image{
+	width: var(--image-mobile);
+	border-radius: 5px 5px 0 0 ;
+
+}
+.container{
+	display: flex;
+	flex-direction: column;  
+	margin: 0 auto;
+	max-width: 18.75em; 
+	margin-top: 5%;
+
+}
+
+.card{
+	background: var(--white); 
+	border-radius: 0 0 5px 5px;
+	margin-top: -1em;
+	padding-bottom: 1.25em;
+	padding-right: 1.25em;
+}
+.name{
+	margin: 0.625em 0 0.3125em 0.9375em;
+	padding: 0.625em 0 0 0;
+	font-family: var(--montserrat);
+	color: var(--dark-grayish-blue);
+	letter-spacing: 5px;
+}
+.title-name{
+	margin: 0.75em 0.3125em 0.75em 0.625em;
+	font-family: var(--fraunces);
+	font-weight: 600;
+	font-size: 1.6875rem;
+
+}
+.text-description{
+	margin: 0.625em 0 0.3125em 0.9375em;
+	font-size: var(--text-size);
+	font-family: var(--montserrat);
+	color: var(--dark-grayish-blue);
+}
+.price-tag{
+	margin: 0.625em 0 0.3125em 0.9375em;
+	font-size: 1.6875rem;
+	font-weight: 500;
+	font-family: var(--fraunces);
+	color: var(--dark-cyan);
+
+}
+.cancel-tag{
+	text-decoration: line-through;
+	color: var(--dark-grayish-blue);
+	text-align: center;
+	font-size: var(--text-size);
+	margin-left: 0.9375em ;
+
+}
+.cart-button{
+	background-color: var(--dark-cyan);
+	margin: 1.25rem 0 0 0.9375rem;
+	color: var(--white);
+	width: 90%;
+	font-family: var(--montserrat);
+	font-size: var(--text-size);
+	padding: .75em 1.5em;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	overflow: hidden;
+} 
+
+
+.attribution {
+	font-size: 0.6875rem;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+@media(min-width: 64em){
+	
+	.container{
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	} 
+	 .mobile-image{
+		height: 63vh;
+		width: 20vw;
+		margin-top: 100px;
+		margin-right: 50px;
+	} 
+	 .card{
+		text-align: left;
+		width: 90vw;
+		height: 60vh;
+		margin-top: 100px;
+		margin-right: 100px; 
+	}
+	
+}
+@media(max-width: 63.9375em){
+	.text-description{
+		line-height: 1.4;
+		padding-right: 0.125em;
+		padding-left: 0.625em;
+	}
+	.name{
+		margin-left: 1.875em;
+		padding-top: 1.25em;
+		margin-top: 1.25em;
+		font-size: 0.625rem
+	}
+	.svg{
+		padding-right: 0.3125em;
+	}
+
+}
