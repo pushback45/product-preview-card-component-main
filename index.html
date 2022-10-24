@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
 		<link
 			rel="icon"
 			type="image/png"
@@ -13,7 +12,6 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 
 		<title>Frontend Mentor | Product preview card component</title>
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 	</head>
 
 	<body>
@@ -21,13 +19,13 @@
 			<div class="container">
 				<picture>
 					<source
-						media="(min-width: 1024px)"
-						srcset="./images/image-product-desktop.jpg"
+						media="(min-width:48em)"
+						srcset="images/image-product-desktop.jpg"
 					/>
 					<img
 						class="mobile-image"
 						src="images/image-product-mobile.jpg"
-						alt="chanel perfume"
+						alt="mobile-image"
 					/>
 				</picture>
 
@@ -46,13 +44,17 @@
 					</button>
 				</div>
 			</div>
-
+		</main>
+		<footer>
 			<div class="attribution">
 				Challenge by
 				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
 					>Frontend Mentor</a
-				>. Coded by <a href="#">Clarence Guevarra</a>.
+				>. Coded by
+				<a href="https://github.com/pushback45" target="_blank"
+					>Clarence Guevarra</a
+				>.
 			</div>
-		</main>
+		</footer>
 	</body>
 </html>
