@@ -108,19 +108,17 @@ body {
 		align-items: center;
 		justify-content: center;
 	} 
-	 .mobile-image{
-		/* flex: 30%;
-		max-width: 100%; */
-
+	.mobile-image{
+		height: 479.208px;
+		width: auto;
 	}
 
 	 .card{	
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		height: 50%;
-		/* width: var(--image-mobile); */
-		
+		height: 470px;
+		padding-right: 150px;
+	}
+	.card .title-name{
+		text-align: center;
 	}
 	
 }
